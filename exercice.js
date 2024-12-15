@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", function () {
                            "O", "N", "Q", "P", "S", "R", "T", "U", "V", "W", "X", "Y", "Z"];
     const alphabetLower = ["b", "a", "c", "d", "f", "e", "h", "g", "i", "j", "l", "k", "m", 
                            "o", "n", "q", "p", "s", "r", "t", "u", "v", "w", "x", "y", "z"];
+    const alphabetCursif = ["b", "a", "c", "d", "f", "e", "h", "g", "i", "j", "l", "k", "m", 
+                           "o", "n", "q", "p", "s", "r", "t", "u", "v", "w", "x", "y", "z"];
     const numbers = Array.from({ length: 100 }, (_, i) => i + 1);
 
     const studentName = new URLSearchParams(window.location.search).get("name");
@@ -68,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
     createExercise("exercice2", alphabetLower, "exercice2", 2, 13, "'Script Ecole 2', Arial, sans-serif");
 
     // Exercice 3 : Lettres cursives
-    createExercise("exercice3", alphabetLower, "exercice3", 2, 13, "'Belle Allure GS', Arial, sans-serif");
+    createExercise("exercice3", alphabetCursif, "exercice3", 2, 13, "'Belle Allure GS', Arial, sans-serif");
 
     // Exercice 4 : Nombres de 1 à 100 (20 colonnes x 5 lignes)
     createExercise("exercice4", numbers, "exercice4", 5, 20, "'Script Ecole 2', Arial, sans-serif");
